@@ -13,6 +13,10 @@
          .container-main {
             width: 100vw;
             height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
          }
          @font-face {
             font-family: "Samarkan";
@@ -104,7 +108,7 @@
             document.body.appendChild(renderer.domElement);
 
             starGeo = new THREE.Geometry();
-            for (let i = 0; i < 60000; i++) {
+            for (let i = 0; i < 6000; i++) {
                star = new THREE.Vector3(
                   Math.random() * 600 - 300,
                   Math.random() * 600 - 300,
